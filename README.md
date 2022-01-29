@@ -5,11 +5,12 @@
 
 > By running this script you fast sync your UG65 gateway for Helium miner
 
-## Install
+## How to Use
 
+Download the project and then run the following commands in project folder.
 ```sh
 cd UG65
-sh ./FastSync.sh {ip address of UG65 in local network}
+sh ./FastSync.sh {ip_address_of_UG65_in_local_network}
 
 ```
 
