@@ -22,7 +22,7 @@ while [ $secs -gt 0 ]; do
    sleep 1                    
    : $((secs--))               
 done
-if docker exec miner miner repair sync_state == 'sync pause' ( echo ssalxxam)
+
 echo '****************** Resuming syncinig ******************'
 docker exec miner miner repair sync_resume 
 echo '****************** Milesight helium height is: ******************'
