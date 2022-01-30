@@ -7,10 +7,9 @@
 
 ## How to Use
 
-Download the project and then run the following commands in project folder.
+Make sure you do NOT have any folder named 'UG65_FastSync' in your directory, then copy and paste following command and change {{ IP address }} with the IP address of the UG65 Milesight helium miner.
 ```sh
-cd UG65
-sh ./FastSync.sh {ip_address_of_UG65_in_local_network}
+git clone https://github.com/AmirFT/UG65_FastSync && cd UG65_FastSync/UG65 && sh ./FastSync.sh {{ IP address }}
 
 ```
 
