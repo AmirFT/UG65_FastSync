@@ -8,10 +8,12 @@
 ## How to Use
 
 Make sure you do NOT have any folder named 'UG65_FastSync' in your directory, then copy and paste following command and change {{ IP address }} with the IP address of the UG65 Milesight helium miner.
+Change {{PORT}} if the ssh port is not 22.
 ```sh
-git clone https://github.com/AmirFT/UG65_FastSync && cd UG65_FastSync/UG65 && sh ./FastSync.sh {{ IP address }}
+git clone https://github.com/AmirFT/UG65_FastSync && cd UG65_FastSync/UG65 && sh ./FastSync.sh {{ IP address }} {{PORT}}
 
 ```
+example : git clone https://github.com/AmirFT/UG65_FastSync && cd UG65_FastSync/UG65 && sh ./FastSync.sh 192.168.1.150 33
 
 ## Author
 
