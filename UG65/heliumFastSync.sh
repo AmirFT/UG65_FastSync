@@ -10,7 +10,7 @@ docker exec miner miner repair sync_pause &&
 echo '****************** Canceling syncing ******************'
 docker exec miner miner repair sync_cancel &&
 echo '****************** Loading snapshot... CAUTION : if it failed, there is no need to worry, proccess is going back here ******************'
-docker exec miner miner snapshot load /var/data/snap/snap-`curl 'http://snapshots-wtf.sensecapmx.cloud/latest-snap.json' |
+docker exec miner miner snapshot load /var/data/snap/snap-`curl 'http://snapshots-wtf.sensecapmx.cloud/latest-snap.json' | sed -e 's/[{}]/''/g' |  awk -v k="text" '{n=split($0,a,",");  print a[2]}' | awk -v k="text" '{n=split($0,b,":");  print b[2]}' | xargs' |
     sed -e 's/[{}]/''/g' | 
     awk -v k="text" '{n=split($0,a,",");  print a[1]}' |
     awk -v k="text" '{n=split($0,b,":");  print b[2]}' | xargs`
